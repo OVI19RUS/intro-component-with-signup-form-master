@@ -1,0 +1,191 @@
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  background: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+}
+
+main {
+  max-width: 1440px;
+  margin: 11rem auto;
+}
+
+.container {
+  display: flex;
+  padding: 6rem;
+}
+
+/* Container Left */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 45%;
+  padding: 0 4rem 0 1rem;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+/* Container Right */
+
+.right-bottom {
+  background-color: white;
+  color: hsl(249, 10%, 26%);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.trial-button {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1rem 9rem;
+  border: none;
+  box-shadow: 0 0.32em 0 0 rgba(87, 80, 143, 0.5);
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.blue {
+  font-weight: 700;
+}
+
+.submit {
+  background-color: hsl(154, 59%, 51%);
+  padding: 0.8rem 11rem;
+  border: none;
+  box-shadow: 0 0.2rem 0 0 rgb(45, 170, 116);
+  border-radius: 5px;
+  color: #ffffff;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.submit:hover {
+  opacity: 70%;
+}
+
+.terms {
+  font-size: 10px;
+  color: hsl(246, 25%, 77%);
+}
+
+.red {
+  color: hsl(0, 100%, 74%);
+}
+
+input {
+  width: 94%;
+  height: 3rem;
+  margin-top: 1rem;
+  border: hsl(249, 10%, 26%) solid 2px;
+  border-radius: 5px;
+}
+
+h4 {
+  font-size: 11px;
+  font-style: italic;
+  margin-left: auto;
+  display: none;
+  height: 0.1rem;
+}
+
+.right-bottom input {
+  padding-left: 25px;
+}
+
+.error-img {
+  background: url(images/icon-error.svg) no-repeat right 1rem center;
+  transition: opacity 100ms linear;
+}
+
+/* Footer */
+
+footer {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 879px) {
+  body {
+    background: url(images/bg-intro-mobile.png) no-repeat;
+    background-color: hsl(0, 100%, 74%);
+  }
+
+  main {
+    max-width: 375px;
+    margin: 3rem auto;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 0 3rem;
+  }
+
+  p {padding: 0 2rem;}
+
+  .right-top {
+    margin-top: 3rem;
+  }
+
+  .trial-button {
+    padding: 1rem 2rem;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  h4 {
+    margin-right: 1.4rem;
+}
+
+  .submit {
+    padding: 0.8rem 4.3rem;
+  }
+
+  .right-bottom {
+    align-items: center;
+    width: 320px;
+    margin-left: 1.3rem;
+    padding: 0.5rem;
+  }
+}
